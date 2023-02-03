@@ -6,9 +6,7 @@ var appTheme = ThemeData(
 fontFamily: GoogleFonts.nunito().fontFamily ,
 
 
- bottomAppBarTheme: const BottomAppBarTheme(
-    color: Colors.black87,
-  ),
+
   brightness: Brightness.dark,
   textTheme: const TextTheme(
     bodyText1: TextStyle(fontSize: 18),

@@ -6,8 +6,8 @@ import 'package:testapp/topics/topics.dart';
 
 var appRoutes = {
   '/' : (context) => const HomeScreen(),
-  // '/login' : (context) => const LoginScreen(),
-  // '/topics' : (context) => const TopicsScreen(),
-  // '/profile' : (context) => const ProfileScreen(),
-  '/about' : (context) => const AboutScreen()
+  '/login' : (context) => const LoginScreen(),
+  '/topics' : (context) => const TopicsScreen(),
+  '/about' : (context) => const AboutScreen(),
+  '/profile' : (context) => const ProfileScreen(),
 };
