@@ -33,9 +33,12 @@ class _AppState extends State<App> {
       // Initialize FlutterFire:
       future: _initialization,
       builder: (context, snapshot) {
+        print('Reconstruyendo');
         // Check for errors
         if (snapshot.hasError) {
-          return const Text('error');
+          return const Scaffold(
+            body: Text('error')
+          );
         }
 
         // Once complete, show your application
@@ -47,7 +50,10 @@ class _AppState extends State<App> {
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
-         return const Text('loading');
+         return WidgetsApp(
+          builder:(context, _) => Text('loading'),
+          color: Colors.blue,
+         );
       },
     );
   }
