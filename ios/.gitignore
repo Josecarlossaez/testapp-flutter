@@ -26,9 +26,7 @@ Flutter/flutter_assets/
 Flutter/flutter_export_environment.sh
 ServiceDefinitions.json
 Runner/GeneratedPluginRegistrant.*
-# SECRET API KEY 
-ios/Runner/GoogleService-Info.plist
-android/app/src/main/google-services.json
+
 # Exceptions to above rules.
 !default.mode1v3
 !default.mode2v3
