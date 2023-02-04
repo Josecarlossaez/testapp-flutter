@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testapp/services/auth.dart';
 
 class ProfileScreen extends StatelessWidget{
   const ProfileScreen({super.key});
@@ -8,6 +9,13 @@ class ProfileScreen extends StatelessWidget{
   return Scaffold(
       appBar: AppBar(
         title: const Text('Profile Screen') ,
+        ),
+        body: ElevatedButton(
+          child: Text('signout'),
+          onPressed: () async {
+            await AuthService().signOut();
+            Navigator.of(context).pushAndRemoveUntil('/' as Route<Object?>, (route) => false);
+          },
         ),
      
     );
